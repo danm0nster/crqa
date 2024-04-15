@@ -38,7 +38,6 @@ Imports:
     Matrix,
     pracma,
     tseriesChaos,
-    gplots,
     rdist
 License: GPL (>= 2)
 Collate:

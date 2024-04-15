@@ -110,7 +110,21 @@ autoMI = function(x, nbins, maxlag){
     x    = xorig[1:(length(xorig)-tau)];
     
     # Compute the two-dimensional histogram of x and xtau
-    p_ij = hist2d(x, xtau, nbins, show = F)$counts;
+    #
+    # FIXME: This is from gplots, which I have removed. (Dan)
+    # p_ij = hist2d(x, xtau, nbins, show = F)$counts;
+    # TODO: Check and validate this solution. I am not sure it gives the
+    # correct result!
+    # http://stackoverflow.com/questions/18089752/r-generate-2d-histogram-from-raw-data
+    x.bin <- seq(floor(min(x)), ceiling(max(x)), length=nbins)
+    y.bin <- seq(floor(min(xtau)), ceiling(max(xtau)), length=nbins)
+    freq <-  as.data.frame(table(findInterval(x, x.bin),findInterval(xtau, y.bin)))
+    freq[,1] <- as.numeric(freq[,1])
+    freq[,2] <- as.numeric(freq[,2])
+    freq2D <- diag(nbins)*0
+    freq2D[cbind(freq[,1], freq[,2])] <- freq[,3]
+    p_ij <- freq2D
+    #
     p_ij = p_ij/sum(p_ij)
     
     # Normalize the rows to get the joint probability the x is
