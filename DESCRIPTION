@@ -39,14 +39,12 @@ Imports:
     pracma,
     tseriesChaos,
     gplots,
-    plot3D,
     rdist
 License: GPL (>= 2)
 Collate:
     'crqa.R'
     'crqa_helpers.R'
     'drpfromts.R'
-    'lorenzattractor.R'
     'mdDelay.R'
     'mdFnn.R'
     'optimizeParam.R'
