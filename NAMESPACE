@@ -16,7 +16,6 @@ export(crqa,
 
 importFrom("grDevices", dev.off, recordPlot)
 importFrom("graphics", mtext, hist, matpoints, par, plot, points)
-importFrom("gplots", hist2d)
 importFrom("Matrix", diag, t, Matrix, sparseMatrix)
 importFrom("pracma", circshift, eps, pdist2, polyfit)
 importFrom("stats", sd, median, rnorm, runif, var)  
