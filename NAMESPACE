@@ -10,7 +10,9 @@ export(crqa,
        simts,
        spdiags,
        wincrqa,
-       windowdrp)
+       windowdrp,
+       false.nearest,
+       mutual)
 
 importFrom("grDevices", dev.off, recordPlot)
 importFrom("graphics", mtext, hist, matpoints, par, plot, points)
