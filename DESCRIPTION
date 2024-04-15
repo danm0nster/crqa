@@ -53,6 +53,8 @@ Collate:
     'spdiags.R'
     'wincrqa.R'
     'windowdrp.R'
+    'false.nearest.R'
+    'mutual.R'
 RoxygenNote: 7.2.3
 LazyData: true
 VignetteBuilder: knitr
