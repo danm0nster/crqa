@@ -37,7 +37,6 @@ Depends:
 Imports:
     Matrix,
     pracma,
-    tseriesChaos,
     rdist
 License: GPL (>= 2)
 Collate:
