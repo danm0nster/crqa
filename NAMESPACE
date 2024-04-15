@@ -2,7 +2,6 @@ useDynLib(crqa, .registration = TRUE)
 
 export(crqa,
        drpfromts,
-       lorenzattractor,
        mdDelay, 
        mdFnn,
        optimizeParam,
@@ -17,7 +16,6 @@ importFrom("grDevices", dev.off, recordPlot)
 importFrom("graphics", mtext, hist, matpoints, par, plot, points)
 importFrom("gplots", hist2d)
 importFrom("Matrix", diag, t, Matrix, sparseMatrix)
-importFrom("plot3D", scatter3D)
 importFrom("pracma", circshift, eps, pdist2, polyfit)
 importFrom("stats", sd, median, rnorm, runif, var)  
 importFrom("rdist", cdist)
