@@ -1,3 +1,5 @@
+.packageName <- 'crqa'
+
 # Dan Mønster, July 2023
 library(dplyr)
 library(ggplot2)
