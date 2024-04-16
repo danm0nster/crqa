@@ -37,7 +37,9 @@ Depends:
 Imports:
     Matrix,
     pracma,
-    rdist
+    rdist,
+    dplyr,
+    ggplot2
 License: GPL (>= 2)
 Collate:
     'crqa.R'
