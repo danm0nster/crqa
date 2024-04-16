@@ -48,6 +48,7 @@ Collate:
     'optimizeParam.R'
     'piecewiseRQA.R'
     'plotRP.R'
+    'plot_rp.R'
     'simts.R'
     'spdiags.R'
     'wincrqa.R'
